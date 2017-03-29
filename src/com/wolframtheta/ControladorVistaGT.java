@@ -86,7 +86,6 @@ public class ControladorVistaGT implements ActionListener, WindowListener {
 			VGT.resultado.setText("");
 			Vector<Personaje> vp = new Vector<Personaje>();
 			String listaNombres[] = new String[10];
-			int listaTurnos[] = new int[10];
 			for (int i = 0; i<10; i++)
 			{
 				listaNombres[i] = new String(VGT.nombres[i].getText());
@@ -131,7 +130,7 @@ public class ControladorVistaGT implements ActionListener, WindowListener {
                 {
                     if (pj.getTurno() - pj1.getTurno() > 150)
                     {
-                        finalRes += pj.getNombre() + " consigue sorpresa a " + pj1.getNombre();
+                        finalRes += pj.getNombre() + " consigue sorpresa a " + pj1.getNombre() + "\n";
                     }
                 }
             }
